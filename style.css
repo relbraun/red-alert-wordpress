@@ -1,0 +1,29 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 24, 2014, 2:02:54 PM
+    Author     : kalman
+*/
+
+.red-alert{
+    position: fixed;
+    z-index: 999999;
+    background-color: #aa0000;
+    width: 100%;
+    height: 90px;
+    border: darkgrey 3px dashed;
+    bottom: -90px;
+}
+.red-alert .icon-alert{
+    float: left;
+    margin: 12px;
+}
+.red-alert .alert-msg{
+    float: right;
+    margin: 12px;
+    font-size: 18px;
+    color: white;
+}
