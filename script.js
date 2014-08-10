@@ -35,11 +35,11 @@
             });
         }
         function parseCities(city){
-            var msg='';
+            var msg=': ';
             var ci=[];
             $.each(city,function(key,val){
-                ci.push(self.cities[val]);
-                msg=ci.join(' ');
+                msg+=self.cities[val].join(' ')+' ';
+                
             });
             return msg;
         }
