@@ -24,7 +24,7 @@ class RedAlert
     public function echoScript()
     {
         $scriptString='<script>'
-                . 'redAlertPikudOref("'.  plugin_dir_url(__FILE__).'/cities.json");'
+                . 'redAlertPikudOref("'.  plugin_dir_url(__FILE__).'/cities.json","'. admin_url('admin-ajax.php').'");'
                 . '</script>';
         echo $scriptString;
     }
