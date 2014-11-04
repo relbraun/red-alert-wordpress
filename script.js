@@ -5,7 +5,7 @@
  */
 
 (function($){
-    var redAlertPikudOref=function(jsonUrl){
+    var redAlertPikudOref=function(jsonUrl,url){
         var main_div=jQuery('<div class="red-alert"><div class="icon-alert"><image src="wp-content/plugins/red-alert/icon.png"></div></div>');
         var msg_div=$('<div class="alert-msg"></div>');
         var self=this
@@ -19,7 +19,7 @@
         $('footer').click(function(){animateit();}).dblclick(function(){unanimateit();});
         function getAlarm(){
             var data={action:'red_alert_msg'};
-            $.ajax({url:'http://localhost/wordpress/wp-admin/admin-ajax.php',
+            $.ajax({url:url,
                 crossDomain: true,
                 dataType: 'json',
                 data:data,
